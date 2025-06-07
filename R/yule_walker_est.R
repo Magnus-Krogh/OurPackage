@@ -1,4 +1,4 @@
-yule_walker_est <- function(x){
+yule_walker_est <- function(x, n){
   number_of_params <- length(x) - 1
   ps <- c(x[2]/x[1])
   v <- c(x[1]*(1-ps[1]^2))
@@ -21,5 +21,8 @@ yule_walker_est <- function(x){
   for (i in 1:(number_of_params)){
     sum <- sum + ps[i]*x[i+1]
   }
-  return(c(ps, x[1] - sum))
+  x <- c(ps, x[1] - sum)
+  attr(x, "realization") <-  stats::arima.sim(list(ar = x[1:(length(x)-1)]), n = n, sd = sqrt(x[length(x)]))[1:n]
+  class(x) <- "ar_mod"
+  return(x)
 }
