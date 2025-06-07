@@ -2,7 +2,8 @@
 #'
 #' @param n The number of simulated point patterns
 #' @param beta Parameter in the model. Must be positive
-#' @param gamma Parameter in the model. Must lie in [0,1]
+#' @param gamma Parameter in the model. Must be greater than or equal to 0 and
+#' less than or equal to 1.
 #' @param r Parameter in the model. Must be positive
 #'
 #' @returns An estimate of the partition function
@@ -38,6 +39,6 @@ partition_function_strauss <- function(n, beta, gamma, r){
     return(sum/n)
   }
   else{
-    print("Parameters do not satisfy the correct restrictions")
+    stop("Parameters do not satisfy the correct restrictions")
   }
 }

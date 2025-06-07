@@ -11,7 +11,8 @@ partition_function_strauss(n, beta, gamma, r)
 
 \item{beta}{Parameter in the model. Must be positive}
 
-\item{gamma}{Parameter in the model. Must lie in \link{0,1}}
+\item{gamma}{Parameter in the model. Must be greater than or equal to 0 and
+less than or equal to 1.}
 
 \item{r}{Parameter in the model. Must be positive}
 }

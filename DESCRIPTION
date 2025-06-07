@@ -17,3 +17,4 @@ Imports:
     spatstat.geom,
     spatstat.random,
     stats
+Suggests: tinytest

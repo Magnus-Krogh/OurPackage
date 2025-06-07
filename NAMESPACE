@@ -2,7 +2,9 @@
 
 S3method(plot,ar_mod)
 S3method(print,ar_mod)
+S3method(summary,ar_mod)
 export(partition_function_strauss)
 export(plot)
 export(print)
 export(quadrat_patterns)
+export(summary)
