@@ -17,4 +17,8 @@ Imports:
     spatstat.geom,
     spatstat.random,
     stats
-Suggests: tinytest
+Suggests: 
+    knitr,
+    rmarkdown,
+    tinytest
+VignetteBuilder: knitr
