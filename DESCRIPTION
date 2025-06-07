@@ -4,7 +4,7 @@ Version: 0.0.0.9000
 Authors@R: 
      c(person("Magnus", "Krogh", , "magnus.n.krogh@gmail.com", role = c("aut", "cre")),
      person("Maria", "Andersen", , "marialyngbaka@gmail.com", role = c("aut")),
-     person("Henriette", "Bjoern", , "henriettebjrn@gmail.com", role = c("aut")))
+     person("Henriette", "Bjørn", , "henriettebjrn@gmail.com", role = c("aut")))
 Description: What the package does (one paragraph).
 License: MIT + file LICENSE
 Encoding: UTF-8
